@@ -22,3 +22,4 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 console.log('git done');
+console.log('git done all ok');
