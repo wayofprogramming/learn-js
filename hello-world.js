@@ -1,4 +1,5 @@
 const http = require('http');
+const express = require('express');
 var url = require('url');
 const dt = require('./date_time');
 const hostname = '127.0.0.1';
@@ -22,4 +23,4 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 console.log('git done');
-console.log('git done all ok');
+console.log('npm link (global pkg name)');
