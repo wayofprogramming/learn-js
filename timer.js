@@ -1,4 +1,4 @@
-const { emitKeypressEvents } = require("readline");
+//const { emitKeypressEvents } = require("readline");
 /*   //not using now 
 function callback(fname){
     if (fname==='to'){
@@ -31,12 +31,14 @@ function quit(){
     
         if (key && key.name == 'q')
         process.exit();
-        if (key && key.name == 'i')
-        console.log('set interval running')
-        setInterval(welcome,1000);
-        if (key && key.name == 't')
+        if (key.name == 'i'){
+            console.log('set interval running')
+            setInterval(welcome,1000);
+        }
+        if (key.name == 't'){
         console.log('set interval running')
         setTimeout(welcome,1000);
+    }
         });
 }
 quit();
