@@ -21,7 +21,7 @@ function welcome () {
   }  
   
 
-function quit(){
+function keypressed(){
     var readline = require('readline');
     readline.emitKeypressEvents(process.stdin);
         if (process.stdin.isTTY)
@@ -41,4 +41,4 @@ function quit(){
     }
         });
 }
-quit();
+keypressed();
